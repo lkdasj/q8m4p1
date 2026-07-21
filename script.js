@@ -589,9 +589,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         startBtn.style.display = "none";
 
-        content.scrollIntoView({
-            behavior: "smooth"
-        });
+        setTimeout(() => {
+            window.scrollTo({
+                top: content.offsetTop,
+                behavior: "smooth"
+            });
+        }, 100);
 
     });
 

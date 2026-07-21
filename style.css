@@ -41,8 +41,10 @@ HEADER
 =========================== */
 
 header {
+    position: relative;
     padding: 90px 25px;
     text-align: center;
+    z-index: 2;
 }
 
 header h1 {
