@@ -18,7 +18,7 @@ Si estás leyendo esto, significa que por fin pude entregarte el dibujo.
 No será la obra de un gran artista, 
 pero sí lleva algo que para mí vale mucho más: tiempo, dedicación y cariño.
 Me gusto pasar tiempo contigo el 20 de julio.
-Aunque fue un rato fue muy agradable.
+Aunque fue un rato, fue muy agradable.
 Me gusta cómo me siento cuando hablamos.
 Y me encanta descubrir, poco a poco, la persona que eres.
 No quiero apresurar nada.
@@ -358,7 +358,7 @@ function rainHeart(){
     heart.style.top="-30px";
     heart.style.fontSize=(18+Math.random()*20)+"px";
     heart.style.pointerEvents="none";
-    heart.style.zIndex="9999";
+    heart.style.zIndex="5000";
     document.body.appendChild(heart);
     let y=-30;
     let x=parseFloat(heart.style.left);
@@ -575,3 +575,24 @@ setInterval(()=>{
         frase.remove();
     },4500);
 },12000);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const startBtn = document.getElementById("startBtn");
+    const content = document.getElementById("content");
+
+    startBtn.addEventListener("click", () => {
+
+        content.classList.remove("hidden");
+        content.classList.add("show");
+
+        startBtn.style.display = "none";
+
+        content.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+});
