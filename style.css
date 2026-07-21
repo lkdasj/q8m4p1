@@ -444,3 +444,12 @@ RESPONSIVE
         transform: translateY(0);
     }
 }
+
+.separator{
+    text-align:center;
+    margin:90px 0;
+    opacity:.8;
+    font-style:italic;
+    color:#ffb4d0;
+    letter-spacing:1px;
+}
