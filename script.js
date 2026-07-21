@@ -358,7 +358,7 @@ function rainHeart(){
     heart.style.top="-30px";
     heart.style.fontSize=(18+Math.random()*20)+"px";
     heart.style.pointerEvents="none";
-    heart.style.zIndex="5000";
+    heart.style.zIndex="1000";
     document.body.appendChild(heart);
     let y=-30;
     let x=parseFloat(heart.style.left);
